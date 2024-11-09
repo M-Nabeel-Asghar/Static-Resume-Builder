@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form id="resumeForm">
+      <h4 class="heading">Static Resume Builder</h4>
+      
+      <section>
+        <h3>Personal Information</h3>
+        <input type="text" name="name" placeholder="Full Name"required >
+        <input type="text" name="address" placeholder="Address" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="number" name="number" placeholder="Number" required>
+      </section>
+      
+      <section>
+        <h3>Education</h3>
+        <textarea name="education" placeholder="Education details..."></textarea>
+      </section>
+      
+      <section>
+        <h3>Work Experience</h3>
+        <input type="text" name="workExperience" placeholder="Comma-separated Work experience details...">
+      </section>
+
+      <section>
+        <h3>Skills</h3>
+        <input type="text" name="skills" placeholder="Comma-separated skills">
+      </section>
+
+      <button type="button" id="generateResume" class=" editable">Generate Resume</button>
+    </form>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+</html>
